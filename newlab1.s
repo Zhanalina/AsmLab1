@@ -36,7 +36,7 @@ _start:
 	mov	edx, dword[a]
 	mov	rsi, qword[e]
 	cmp	rsi, rdx
-        jl      is_not_subtracted
+        jb      is_not_subtracted
 	sub	rsi, rdx
 	cmp	rsi, 0
 	je	division_by_zero
